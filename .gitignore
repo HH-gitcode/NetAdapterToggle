@@ -1,0 +1,20 @@
+# Build outputs
+bin/
+obj/
+dist/
+out/
+publish/
+
+# Visual Studio / IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs & temp
+*.log
+*.tmp
+Thumbs.db
+Desktop.ini

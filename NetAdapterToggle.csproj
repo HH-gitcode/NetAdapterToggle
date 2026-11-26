@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>NetAdapterToggle</AssemblyName>
+    <RootNamespace>NetAdapterToggle</RootNamespace>
+    <Version>1.0.0</Version>
+    <Company>NetAdapterToggle</Company>
+    <Product>网络适配器一键开关</Product>
+    <Description>一键启用或禁用 Windows 网络适配器</Description>
+  </PropertyGroup>
+
+</Project>
