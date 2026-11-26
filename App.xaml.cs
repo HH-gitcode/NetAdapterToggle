@@ -94,6 +94,20 @@ public partial class App : System.Windows.Application
 
     public static Icon CreateAppIcon()
     {
+        try
+        {
+            var streamInfo = GetResourceStream(new Uri("pack://application:,,,/Assets/app.ico"));
+            if (streamInfo?.Stream is not null)
+            {
+                using var stream = streamInfo.Stream;
+                return new Icon(stream, new System.Drawing.Size(32, 32));
+            }
+        }
+        catch
+        {
+            // Fall back to runtime-drawn icon if resource lookup fails
+        }
+
         using var bmp = new Bitmap(32, 32);
         using var g = Graphics.FromImage(bmp);
         g.SmoothingMode = SmoothingMode.AntiAlias;

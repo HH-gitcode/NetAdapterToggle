@@ -22,7 +22,7 @@ public static class ShortcutService
         shortcut.Arguments = $"--toggle \"{adapterName}\"";
         shortcut.WorkingDirectory = Path.GetDirectoryName(exePath) ?? string.Empty;
         shortcut.Description = $"一键启用或禁用网络适配器: {adapterName}";
-        shortcut.IconLocation = @"C:\Windows\System32\ncpa.cpl,0";
+        shortcut.IconLocation = $"{exePath},0";
         shortcut.Save();
 
         return lnkPath;
